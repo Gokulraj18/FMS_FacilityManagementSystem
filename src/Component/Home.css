@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    color:rgba(44,87, 172);
+    border-bottom: 1px solid rgba(44,87, 172);
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color:rgba(44,87, 172);
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .nav li a{
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.5s;
+    background-color: transparent;
+    color:rgba(44,87, 172);
+    
+}
+header .nav li a:hover{
+    background-color:rgba(44,87, 172,0.8);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+header.sticky .nav li a{
+    color: #111;
+    transition: 0.5s;
+}
+header.sticky .nav li a:hover{
+    color: #fff;
+}
+p{
+    font-weight: 300;
+}
+.body{
+    min-height: 1000px;
+    overflow-x: hidden;
+}
+.btn{
+    text-decoration: none;
+    background-color:rgba(44,87, 172);
+    margin-top: 20px;
+    padding: 2px 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius:3px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+.home{
+    height: 600px;
+    width: 100%;
+    background-image: url('./FMSbgimg\ \(1\).png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+section{
+    padding-top: 100px;
+}
+.heading{
+    font-size: 40px;
+}
+span{
+    font-size: 90px;
+    font-weight: 500;
+    color:rgba(44,87, 172,0.8);
+}
+.aboutus{
+    text-align: center;
+}
+.aboutus p{
+    padding:0px 40px;
+}
+.imgCon{
+    width: 800px;
+    display: inline-block;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.contact{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact .box{
+    margin-top: 50px;
+    padding: 10px 10px 10px 10px;
+    width: 35%;
+    box-shadow:0 4px 8px 0 rgba(122, 122, 122, 0.2), 0 6px 20px 0 rgba(221, 220, 220, 0.19);
+}
+.contact .box h4{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.contact .box .input{
+    width:100%;
+    margin-bottom: 20px;
+}
+.contact .box .input input{
+    width: 80%;
+    padding-right: 10px;
+    color: #c4c4c4;
+}
+.contact .box .input input[type="submit"]{
+    width: 20%;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+}
+.contact .box .input input[type="text"]{
+    padding-left: 5px;
+}
+.contact .box .input textarea{
+    padding-left: 5px;
+}
+.contact .box .input input[type="submit"]{
+    width: 20%;
+    text-align: center;
+    color: #c4c4c4;
+    padding-left: 5px;
+    background-color:rgba(44,87, 172,0.8);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.5s;
+    box-shadow:0 4px 8px 0 rgba(122, 122, 122, 0.2), 0 6px 20px 0 rgba(221, 220, 220, 0.19);
+}
+.contact .box .input input[type="submit"]:hover{
+    background-color: white;
+    color:rgba(44,87, 172,0.8);
+    letter-spacing: 1px;
+}
+
+.Copyrighttext{
+    padding: 1px 1px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    color: #777777;
+}
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-logout{
+    background-color:rgba(44,87, 172,0.8);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.footer{
+    text-align: center;
+    border-top: 1px solid rgba(182, 184, 188, 0.8);
+}
