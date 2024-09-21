@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './Service.css';
 import { useAuth } from './Auth';
+import 'bootstrap/dist/css/bootstrap.css';
 import phone from './images/phone.png';
 
 const Service = () => { 

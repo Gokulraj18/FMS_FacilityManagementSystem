@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.css';
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from './Auth'
 import './Login.css';
