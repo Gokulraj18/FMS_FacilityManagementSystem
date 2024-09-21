@@ -9,10 +9,10 @@ import phone from './images/phone.png';
 const Service = () => { 
   const auth = useAuth();
   const [userlist, setUserList] = useState([]);
-  const Port = import.meta.env.PORT;
+  const port = import.meta.env.VITE_PORT || 3000;
 
   useEffect(() => {
-    axios.get(`${Port}/Facility-db`)
+    axios.get(`${port}/Facility-db`)
       .then((res) => {
         setUserList(res.data);
       })
