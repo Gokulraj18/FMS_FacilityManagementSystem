@@ -7,11 +7,12 @@ import './Login.css';
 
 export default function Login() {
     const navigate = useNavigate()
+    const Port = import.meta.env.PORT;
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     const [userlist, setUserlist] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3001/Users')
+        axios.get(`${Port}/Users`)
             .then(res => setUserlist(res.data))
             .catch(err => console.log(err))
     }, [])

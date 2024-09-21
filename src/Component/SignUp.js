@@ -9,10 +9,11 @@ export default function SignUp() {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const navigate = useNavigate()
+    const Port = import.meta.env.PORT;
 
     const handleSignup = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/Users', { "name": name, "email": email, "phone": phone, "password": password })
+        axios.post(`${Port}/Users`, { "name": name, "email": email, "phone": phone, "password": password })
             .then(res => {
                 console.log(res);
                 navigate('/login');

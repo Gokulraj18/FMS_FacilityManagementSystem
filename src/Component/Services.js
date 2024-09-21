@@ -9,9 +9,10 @@ import phone from './images/phone.png';
 const Service = () => { 
   const auth = useAuth();
   const [userlist, setUserList] = useState([]);
+  const Port = import.meta.env.PORT;
 
   useEffect(() => {
-    axios.get('http://localhost:3001/Facility-db')
+    axios.get(`${Port}/Facility-db`)
       .then((res) => {
         setUserList(res.data);
       })

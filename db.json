@@ -41,6 +41,13 @@
       "email": "adminmail@gmail.com",
       "phone": "99999999999",
       "password": "admin"
+    },
+    {
+      "id": "480a",
+      "name": "Raj",
+      "email": "gshs@gmail.com",
+      "phone": "1234567890",
+      "password": "12345"
     }
   ],
   "Facility-db": [
