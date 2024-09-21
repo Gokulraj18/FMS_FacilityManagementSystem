@@ -1,9 +1,11 @@
+// Service.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './Service.css';
 import { useAuth } from './Auth';
+import phone from './images/phone.png';
 
-export const Service = () => {
+const Service = () => { 
   const auth = useAuth();
   const [userlist, setUserList] = useState([]);
 
@@ -27,9 +29,16 @@ export const Service = () => {
         <div className='single-user' key={x.id}>
           <img className="image-user" alt="user profile" src={x.image} />
           <p>{x.title}</p>
-          <a href="mailto:21cs032@psr.edu.in">need facility</a>
+          <p>
+          <a style={{ backgroundColor: 'transparent' }} href="tel:+4733378901">
+          <img src={phone} alt="Phone" />
+          </a>
+          <a href="mailto:21cs032@psr.edu.in">Contact Us</a>
+          </p>
         </div>
       ))}
     </div>
   );
 };
+
+export default Service; 

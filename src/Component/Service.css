@@ -7,10 +7,21 @@
   }
   
   .single-user {
+    background-color: white;
     border: 1px solid #ccc;
-    padding: 10px;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    padding: 15px;
     text-align: center;
   }
+
+  
+
+.user-container :hover{
+  background-color: #ff8a1d;
+  color: white;
+  transition: ease-in-out 0.1s;
+}
   
   .image-user {
     width: 100px;

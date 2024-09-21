@@ -22,6 +22,7 @@ export default function Login() {
         if (user) {
             auth.login(name)
             if (user.name === 'admin' && user.password === 'admin') {
+                console.log(user.name+" "+user.password)
                 navigate('/admin')
             } else {
                 navigate('/')
