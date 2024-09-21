@@ -11,7 +11,7 @@ export default function Login() {
     const [password, setPassword] = useState('')
     const [userlist, setUserlist] = useState([])
     useEffect(() => {
-        axios.get(`/Users`)
+        axios.get('https://gokulraj18.github.io/fms/db.json/users')
             .then(res => setUserlist(res.data))
             .catch(err => console.log(err))
     }, [])

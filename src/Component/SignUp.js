@@ -12,7 +12,7 @@ export default function SignUp() {
     const port = process.env.REACT_APP_PORT;  
     const handleSignup = (e) => {
         e.preventDefault();
-        axios.post(`${port}/Users`, { "name": name, "email": email, "phone": phone, "password": password })
+        axios.post('https://gokulraj18.github.io/fms/db.json/users', { "name": name, "email": email, "phone": phone, "password": password })
             .then(res => {
                 console.log(res);
                 navigate('/login');

@@ -12,7 +12,7 @@ const Service = () => {
   const port = process.env.REACT_APP_PORT;
 
   useEffect(() => {
-    axios.get(`${port}/Facility-db`)
+    axios.get('https://gokulraj18.github.io/fms/db.json/facility-db')
       .then((res) => {
         setUserList(res.data);
       })
