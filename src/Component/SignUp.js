@@ -9,7 +9,7 @@ export default function SignUp() {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const navigate = useNavigate()
-    const port = process.env.VITE_PORT || 3000;
+    const port = process.env.VITE_PORT;
 
     const handleSignup = (e) => {
         e.preventDefault();
