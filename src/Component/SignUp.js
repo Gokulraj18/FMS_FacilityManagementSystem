@@ -9,7 +9,7 @@ export default function SignUp() {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const navigate = useNavigate()
-    const port = process.env.VITE_PORT;    
+    const port = import.meta.env.VITE_PORT;   
     const handleSignup = (e) => {
         e.preventDefault();
         axios.post(`${port}/Users`, { "name": name, "email": email, "phone": phone, "password": password })
