@@ -13,7 +13,8 @@ export default function Login() {
     const [userlist, setUserlist] = useState([])
     useEffect(() => {
         axios.get(`${port}/Users`)
-            .then(res => setUserlist(res.data))
+            // .then(res => setUserlist(res.data)console.log(res.data))
+            .then(res=>console.log(res.data))
             .catch(err => console.log(err))
     }, [])
     const auth = useAuth()
