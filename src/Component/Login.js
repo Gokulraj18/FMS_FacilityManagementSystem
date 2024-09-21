@@ -7,7 +7,7 @@ import './Login.css';
 
 export default function Login() {
     const navigate = useNavigate()
-    const port = process.env.VITE_PORT;
+    const port = process.env.REACT_APP_PORT;
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     const [userlist, setUserlist] = useState([])

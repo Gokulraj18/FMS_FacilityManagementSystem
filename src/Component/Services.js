@@ -9,7 +9,7 @@ import phone from './images/phone.png';
 const Service = () => { 
   const auth = useAuth();
   const [userlist, setUserList] = useState([]);
-  const port = process.env.VITE_PORT;
+  const port = process.env.REACT_APP_PORT;
 
   useEffect(() => {
     axios.get(`${port}/Facility-db`)
